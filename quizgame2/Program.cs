@@ -20,15 +20,17 @@ namespace quizgame2
             answers.Add("thirtythree");
             answers.Add("eighty");
 
-            //read user input
-            Console.ReadLine();
-            string userinput = Console.ReadLine();
+            foreach (string answer in answers)
+                Console.WriteLine(answer);
 
-            //compair user intput to answers
+            //read user input
+            string userinput = Console.ReadLine();
             if (userinput == "twenty")
                 Console.WriteLine("yay");
             else
                 Console.WriteLine("bummer");
+
+            //compair user intput to answers
 
 
 
