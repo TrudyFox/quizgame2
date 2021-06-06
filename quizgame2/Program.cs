@@ -21,7 +21,17 @@ namespace quizgame2
             answers.Add("eighty");
 
             //read user input
+            Console.ReadLine();
+            string userinput = Console.ReadLine();
+
             //compair user intput to answers
+            if (userinput == "twenty")
+                Console.WriteLine("yay");
+            else
+                Console.WriteLine("bummer");
+
+
+
             //win or lose?
 
         }
