@@ -10,15 +10,19 @@ namespace quizgame2
             //ask question
 
             string question;
-            question = "how many legs does oprah have?";
+            question = "how many dogs does oprah have?";
             Console.Write(question);
 
             //put out 4 mutltipul choice answers
             List<string> answers = new List<string>();
-            answers.Add("one");
-            answers.Add("three");
-            answers.Add("thirty");
-            answers.Add("eighty");
+            answers.Add("1");
+            answers.Add("many");
+            answers.Add("zero");
+            answers.Add("fivehundred");
+
+            int correctAnswerNumber = 0;
+
+
 
             foreach (string answer in answers)
             {
@@ -29,7 +33,7 @@ namespace quizgame2
             string userinput = Console.ReadLine();
 
             //compair user intput to answers the answer number 3 is always the correct answer
-            if (userinput == answers[2])
+            if (userinput == answers[correctAnswerNumber])
                 Console.WriteLine("yay");
             else
                 Console.WriteLine("bummer");
