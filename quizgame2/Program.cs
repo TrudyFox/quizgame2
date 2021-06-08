@@ -18,6 +18,7 @@ namespace quizgame2
             for (int questionNumber = 0; questionNumber < numberOfQuestions; questionNumber++)
             {
                 string question = questions[questionNumber];
+                Console.WriteLine(question);
             } 
 
             //put out 4 mutltipul choice answers
