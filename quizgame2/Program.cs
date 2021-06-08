@@ -8,10 +8,17 @@ namespace quizgame2
         static void Main(string[] args)
         {
             //ask question
+            List<string> questions = new List<string>();
+            questions.Add("How many children does Oprah have?");
+            questions.Add("How many houses does Oprah own?");
+            questions.Add("Am I doning this correct?");
+            questions.Add("how many dogs does oprah have?");
+            Int32 numberOfQuestions = questions.Count;
 
-            string question;
-            question = "how many dogs does oprah have?";
-            Console.Write(question);
+            for (int questionNumber = 0; questionNumber < numberOfQuestions; questionNumber++)
+            {
+                string question = questions[questionNumber];
+            } 
 
             //put out 4 mutltipul choice answers
             List<string> answers = new List<string>();
@@ -21,6 +28,7 @@ namespace quizgame2
             answers.Add("fivehundred");
 
             int correctAnswerNumber = 0;
+
 
 
 
